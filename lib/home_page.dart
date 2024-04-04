@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notification_app/notif_service.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -11,7 +12,12 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            NotificationService().showNotification(
+              title: "Notification Title",
+              body: "Test Notif",
+            );
+          },
           child: const Text("Push Notification"),
         ),
       ),
