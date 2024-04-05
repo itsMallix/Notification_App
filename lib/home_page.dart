@@ -13,12 +13,10 @@ class HomePage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            NotificationService().showNotification(
-              title: "Notification Title",
-              body: "Test Notif",
-            );
+            NotificationHelper.scheduledNotification(
+                "Scheduled Notification", "test notifikasi terjadwal");
           },
-          child: const Text("Push Notification"),
+          child: const Text("Scheduled Notification"),
         ),
       ),
     );
