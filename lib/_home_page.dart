@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notification_app/notif_service.dart';
+import 'package:notification_app/_notif_service.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
